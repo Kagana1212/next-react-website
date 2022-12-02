@@ -1,4 +1,4 @@
-import Logo from "../Logo/Logo.jsx";
+import Logo from "../Logo/Logo";
 
 export default function Footer() {
   return (

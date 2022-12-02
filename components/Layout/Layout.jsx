@@ -1,12 +1,13 @@
-import Header from "components/header";
-import Footer from "components/footer";
+import Header from "../Header/Header.jsx";
+import Footer from "../Footer/Footer.jsx";
+import Hero from "components/Hero/Hero.jsx";
 
 export default function Layout({ children }) {
   return (
     <>
       <Header />
 
-      <main>{childen}</main>
+      <main>{children}</main>
 
       <Footer />
     </>
