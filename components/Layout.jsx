@@ -1,6 +1,5 @@
-import Header from "../Header/Header.jsx";
-import Footer from "../Footer/Footer.jsx";
-import Hero from "components/Hero/Hero.jsx";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
