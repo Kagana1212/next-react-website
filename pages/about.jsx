@@ -1,15 +1,18 @@
+import Meta from "components/meta"
 import Container from "../components/container.jsx";
 import Hero from "components/Hero";
 import PostBody from "components/post-body.jsx"
 import Contact from "components/contact"
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-column.jsx"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import eyecatch from "images/about.jpg"
+
 
 
 export default function Blog() {
   return (
     <Container>
+      <Meta pageTitle="アバウト" pageDesc="About development activities" />
       <Hero title="About" subtitle="About development activities" />
 
       <figure>
