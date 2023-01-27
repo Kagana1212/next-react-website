@@ -8,12 +8,12 @@ export default function PostCategories({ categories }) {
         <div className={styles.flexContainer}>
             <h3 className={styles.heading}>
                 <FontAwesomeIcon icon={faFolderOpen} />
-                <spen className="sr-onry">Categories</spen>
             </h3>
         <ul className={styles.list}>
-            {categories.map(({ slug }) => (
+            {categories.map(({ name, slug }) => (
                 <li key={slug}>
                     <Link href={`/blog/category/${slug}`}>
+                        <div>{name}</div>
                     </Link>
                 </li>
             ))}

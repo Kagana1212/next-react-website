@@ -1,7 +1,7 @@
 .flexContainer {
     display: flex;
     align-items: baseline;
-    gap: a.25rem;
+    gap: 1.25rem;
     color: var(--gray-50);
 }
 
