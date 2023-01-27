@@ -1,9 +1,16 @@
+import { useState } from "react"
 import Link from "next/link";
 import styles from "styles/Nav.module.css";
 
 export default function Nav() {
+  const [navIsOpen, setNavIsOpen] = useState(false)
+
+  const toggleNav = () => {
+    setNavIsOpen((prev) => !prev)
+  }
+  
   return (
-    <nav>
+    <nav className={navIsOpen ? styles.open : styles.close}>
       <ul className={styles.list}>
         <li>
           <Link href="/">Home</Link>
