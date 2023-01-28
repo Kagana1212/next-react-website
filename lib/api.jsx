@@ -64,11 +64,12 @@ export async function getAllCategories(limit = 100) {
     }
 }
 
-export async function getAllPostsByCategory(limit = 100) {
+export async function getAllPostsByCategory(catId, limit = 100) {
     try {
         const posts = await client.get({
             endpoint: 'blogs',
             queries: {
+                filters: `categories[contains]${catID}`,
                 fields: 'title,slug,eyecatch',
                 orders: '-publishDate',
                 limit: limit,
