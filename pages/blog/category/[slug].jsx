@@ -1,9 +1,8 @@
-import { getAllCategories } from "lib/api"
-import { getAllPostsByCategory } from "lib/api"
+import { getAllCategories, getAllPostsByCategory } from "lib/api";
 import Meta from "components/meta"
 import Container from "components/container"
 import PostHeader from "components/post-header"
-import Posts from "components/posts"
+import Posts from "components/posts";
 import { getPlaiceholder } from "plaiceholder"
 
 import { eyecatchLocal } from "lib/constants"
